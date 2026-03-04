@@ -180,7 +180,7 @@ Monitoramento de áreas antropizadas com presença de atividades ilícitas por m
 -   Geração de mapas temáticos
 
     ```{r}
-    #| echo: false
+    #| echo: true
     library(leaflet)
 
     leaflet() %>%
