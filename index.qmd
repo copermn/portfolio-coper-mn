@@ -1,8 +1,9 @@
 ---
 title: "Portfólio de Atividades"
-subtitle: "CENSIPAM - COPER-MN"
+subtitle: "**CENSIPAM - COPER-MN**"
 author: "Fábio Passos"
 date: today
+format: html
 lang: pt
 ---
 

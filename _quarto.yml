@@ -7,9 +7,9 @@ website:
 
 format:
   html:
+    title-block-banner: "#003366" # Ativa o banner azul
+    css: styles.css
     theme: cosmo
     toc: true
-    toc-location: left
-    smooth-scroll: true
-    number-sections: true
-    css: style.css
+    
+ 

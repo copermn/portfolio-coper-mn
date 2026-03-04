@@ -1,46 +1,73 @@
-/* ===== Identidade Visual COPER-MN / CENSIPAM ===== */
-
-/* Ajuste geral */
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
+/* ===== 1. BANNER AZUL TOTAL (UNIFICANDO TUDO) ===== */
+#title-block-header.quarto-title-block.default {
+  background-color: #003366 !important; /* Cor azul institucional */
+  padding: 40px 10% 20px 10%;            /* Espaçamento interno */
+  margin-top: 0;
+  /* LINHA PRETA larga separando do corpo branco */
+  border-bottom: 10px solid #000000 !important; 
 }
 
-/* Cor institucional nos títulos */
-h1, h2, h3 {
-  color: #003366;
+/* ===== 2. LOGO E TEXTO (TÍTULO/SUBTÍTULO) ===== */
+.quarto-title-block .quarto-title-banner .quarto-title {
+  display: flex !important;              /* Força o alinhamento flexível */
+  flex-direction: row !important;        /* Logo e textos lado a lado */
+  align-items: center !important;        /* Centraliza verticalmente */
+  gap: 30px;                             /* Espaço entre logo e título */
+  /* LINHA AMARELA abaixo do título/subtítulo */
+  border-bottom: 4px solid #FFCC00 !important; 
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-/* Container do título */
-.quarto-title-block .quarto-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-/* Logo esquerda */
+/* Injeção do Logo à Esquerda */
 .quarto-title::before {
   content: "";
   background-image: url("images/logo_censipam_negativo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 210px;
-  height: 150px;
-  margin-top: 50px;
-  margin-right: 50px
+  width: 180px;
+  height: 100px;
+  display: block;                        /* Transforma em bloco visível */
 }
 
-
-/* Centraliza texto */
-.quarto-title h1 {
-  text-align: center;
+/* Título em Negrito e Branco */
+.quarto-title .title {
+  color: #ffffff !important;
+  font-weight: bold !important;
   margin: 0;
+  text-align: left !important;           /* Garante alinhamento à esquerda do texto */
 }
 
-.navbar {
-  background-color: #003366 !important;
+/* Subtítulo em Branco e embaixo do título */
+.quarto-title .subtitle {
+  color: #ffffff !important;
+  margin-top: 5px;
+  text-align: left !important;
 }
 
-.sidebar-navigation {
-  border-right: 3px solid #FFCC00;
+/* ===== 3. AUTOR E DATA (DENTRO DO AZUL) ===== */
+/* Ajustamos o container de metadados para subir e ficar no azul */
+.quarto-title-meta {
+  background-color: transparent !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Força cor branca nos rótulos e textos de autor/data */
+.quarto-title-meta-heading, 
+.quarto-title-meta-contents,
+.quarto-title-meta-contents p,
+.quarto-title-meta-contents span {
+  color: #ffffff !important;
+  font-weight: normal;
+}
+
+/* ===== 4. CORPO E SIDEBAR ===== */
+body {
+  background-color: #ffffff;             /* Fundo do corpo branco */
+}
+
+/* Garante que o menu lateral comece abaixo da linha preta */
+.quarto-sidebar {
+  padding-top: 20px;
 }
