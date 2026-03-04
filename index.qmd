@@ -240,7 +240,3 @@ Local:
 
 Email institucional\
 Telefone institucional
-
-Recomeçar
-
-Adaptar o visual para ficar mais institucional (cores oficiais do CENSIPAM) e Ir para PASSO 3 — Publicar no GitHub Pages
