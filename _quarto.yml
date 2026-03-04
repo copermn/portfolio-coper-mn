@@ -8,8 +8,7 @@ website:
 format:
   html:
     title-block-banner: "#003366" # Ativa o banner azul
-    css: styles.css
     theme: cosmo
+    css: styles.css
     toc: true
-    
- 
+    embed-resources: true

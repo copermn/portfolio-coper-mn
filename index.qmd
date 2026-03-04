@@ -1,6 +1,6 @@
 ---
-title: "Portfólio de Atividades"
-subtitle: "**CENSIPAM - COPER-MN**"
+title: "**Portfólio de Atividades**"
+subtitle: "CENSIPAM - COPER-MN"
 author: "Fábio Passos"
 date: today
 format: html
@@ -240,7 +240,3 @@ Local:
 
 Email institucional\
 Telefone institucional
-
-Recomeçar
-
-Adaptar o visual para ficar mais institucional (cores oficiais do CENSIPAM) e Ir para PASSO 3 — Publicar no GitHub Pages
