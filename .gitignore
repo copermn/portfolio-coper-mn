@@ -50,3 +50,10 @@ rsconnect/
 
 /.quarto/
 **/*.quarto_ipynb
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+_site
+index_files
