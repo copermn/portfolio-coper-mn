@@ -7,8 +7,9 @@ website:
 
 format:
   html:
-    title-block-banner: "#003366" # Ativa o banner azul
+    title-block-banner: "#003366" # Ativa o banner azul e o deixa da largura da web página
     theme: cosmo
-    css: styles.css
+    css: style.css
     toc: true
-    embed-resources: true
+  
+
