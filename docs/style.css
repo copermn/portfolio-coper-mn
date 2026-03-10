@@ -1,0 +1,81 @@
+/* ===== 1. BANNER AZUL TOTAL (UNIFICANDO TUDO) ===== */
+#title-block-header.quarto-title-block.default {
+  background-color: #003366 !important; /* Cor azul institucional */
+  padding: 40px 10% 20px 10%;            /* Espaçamento interno */
+  margin-top: 0;
+  /* LINHA PRETA larga separando do corpo branco */
+  border-bottom: 10px solid #000000 !important; 
+}
+
+/* ===== 2. LOGO E TEXTO (TÍTULO/SUBTÍTULO) ===== */
+
+.quarto-title-block .quarto-title-banner .quarto-title {
+  display: flex !important;
+  flex-direction: row !important;        /* logo esquerda, texto direita */
+  align-items: center !important;
+  justify-content: center;               /* centraliza o bloco */
+  gap: 30px;
+
+  border-bottom: 4px solid #FFCC00 !important;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* Bloco de texto (titulo + subtitulo) */
+.quarto-title-block .title-subtitle {
+  display: flex;
+  flex-direction: column;                /* subtítulo abaixo */
+  align-items: center;                   /* centraliza texto */
+  text-align: center;
+}
+
+/* Logo */
+.quarto-title::before {
+  content: "";
+  background-image: url("images/logo_censipam_negativo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 100px;
+  display: block;
+}
+
+/* título */
+.quarto-title .title {
+  color: #ffffff !important;
+  font-weight: bold !important;
+  margin: 0;
+}
+
+/* subtítulo */
+.quarto-title .subtitle {
+  color: #ffffff !important;
+  margin-top: 5px;
+}
+
+/* ===== 3. AUTOR E DATA (DENTRO DO AZUL) ===== */
+/* Ajustamos o container de metadados para subir e ficar no azul */
+.quarto-title-meta {
+  background-color: transparent !important;
+  margin-top: -60px !important;
+  padding-top: 0 !important;
+}
+
+/* Força cor branca nos rótulos e textos de autor/data */
+.quarto-title-meta-heading, 
+.quarto-title-meta-contents,
+.quarto-title-meta-contents p,
+.quarto-title-meta-contents span {
+  color: #ffffff !important;
+  font-weight: normal;
+}
+
+/* ===== 4. CORPO E SIDEBAR ===== */
+body {
+  background-color: #ffffff;             /* Fundo do corpo branco */
+}
+
+/* Garante que o menu lateral comece abaixo da linha preta */
+.quarto-sidebar {
+  padding-top: 20px;
+}
