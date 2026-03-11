@@ -1,7 +1,8 @@
 /* ===== 1. BANNER AZUL TOTAL (UNIFICANDO TUDO) ===== */
-#title-block-header.quarto-title-block.default {
+#title-block-header {
   background-color: #003366 !important; /* Cor azul institucional */
   padding: 40px 10% 20px 10%;            /* Espaçamento interno */
+  color: white;
   margin-top: 0;
   /* LINHA PRETA larga separando do corpo branco */
   border-bottom: 10px solid #000000 !important; 
@@ -9,6 +10,7 @@
 
 /* ===== 2. LOGO E TEXTO (TÍTULO/SUBTÍTULO) ===== */
 
+/* container geral: logo + texto */
 .quarto-title-block .quarto-title-banner .quarto-title {
   display: flex !important;
   flex-direction: row !important;        /* logo esquerda, texto direita */
@@ -18,15 +20,23 @@
 
   border-bottom: 4px solid #FFCC00 !important;
   padding-bottom: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+
 }
 
+/* container interno de texto */
+.quarto-title-block .quarto-title-banner .quarto-title .title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* Bloco de texto (titulo + subtitulo) */
-.quarto-title-block .title-subtitle {
+.quarto-title .title-blockr {
   display: flex;
   flex-direction: column;                /* subtítulo abaixo */
-  align-items: center;                   /* centraliza texto */
-  text-align: center;
+  align-items: flex-start; /* Alinha o texto à esquerda (ao lado da logo) */
+  justify-content: center;
 }
 
 /* Logo */
@@ -35,22 +45,30 @@
   background-image: url("images/logo_censipam_negativo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 180px;
-  height: 100px;
+  width: 200px;
+  height: 120px;
   display: block;
+
 }
 
 /* título */
 .quarto-title .title {
   color: #ffffff !important;
   font-weight: bold !important;
-  margin: 0;
+  margin: 0;  /* Remove espaço extra abaixo do título */
+
 }
 
 /* subtítulo */
 .quarto-title .subtitle {
+  display: block;
   color: #ffffff !important;
-  margin-top: 5px;
+  margin-top: 5px !important; /* Espaçamento curto entre eles */
+  font-size: 1.2rem;
+
+
+
+
 }
 
 /* ===== 3. AUTOR E DATA (DENTRO DO AZUL) ===== */

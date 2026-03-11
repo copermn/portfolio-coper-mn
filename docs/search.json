@@ -46,7 +46,7 @@
     "href": "index.html#atividades-desenvolvidas-3",
     "title": "Portfólio de Atividades",
     "section": "Atividades desenvolvidas",
-    "text": "Atividades desenvolvidas\n\nProcessamento de imagens;\nQuantificação da área mapeada e analisada;\nIdentificação de ilícitos ambientais;\nGeração de mapas temáticos\n\nlibrary(leaflet)\n\nleaflet() %&gt;%\n  addTiles() %&gt;%\n  setView(-60, -3, zoom=5)"
+    "text": "Atividades desenvolvidas\n\nProcessamento de imagens;\nQuantificação da área mapeada e analisada;\nIdentificação de ilícitos ambientais;\nGeração de mapas temáticos"
   },
   {
     "objectID": "index.html#link-da-plataforma",
